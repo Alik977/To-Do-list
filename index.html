@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./pictures/to-do-list.png" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="modalContainer" data-id="454" id="modalContainer">
+      <div class="modal" id="modal">
+        <h2>Համոզված ես՞</h2>
+        <div class="btns">
+          <button id="deleteItem">Այո</button>
+          <button id="closeMod">Ոչ</button>
+        </div>
+        <button id="closeModal">X</button>
+      </div>
+    </div>
+
+    <form id="form">
+      <input autofocus type="text" placeholder="Գրիր քո գործերը" />
+      <div class="btn">
+        <input type="submit" value="Հաստատել" class="bottom" />
+        <input type="button" value="Լրացնել" class="bottom1" id="btnother" />
+        <input type="button" value="Ջնջել" class="bottom2" id="btnClose" />
+      </div>
+    </form>
+    <div class="box">
+  <div class="toDoListBlock" id="toDoBlock"></div>
+  <h3 id="jsonTitle"></h3>
+<pre id="jsonOutput" ></pre>
+</div>
+
+
+  </body>
+</html>
